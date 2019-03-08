@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>文档平台electron Demo</title>
+  </head>
+  <body>
+    <div id="app">
+        <header class="header">
+          文件列表
+          <button>同步远程按钮，这边可以做一个本地的临时地址，做同步，注意要校验2边文件的最后修改时间</button>
+        </header>
+        <tree :source="list" @file:drop="onFileDrop" />
+    </div>
+
+    <script>
+        require('./index.js');
+    </script>
+  </body>
+</html>

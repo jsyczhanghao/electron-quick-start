@@ -1,0 +1,46 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: arial;
+}
+
+.header{
+  border-bottom: 2px solid #666;
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button{
+  background: red;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 14px;
+}
+
+ul, li{
+  list-style: none;
+}
+
+.tree-item{
+  margin-left: 15px;
+}
+
+.tree-item-path{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.tree-dragenter{
+  background: rgba(0, 0, 0, 0.2);
+}
