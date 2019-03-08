@@ -183,5 +183,5 @@ _.readdirsByTree = function(dir){
 };
 
 _.cp = function(source, target, callback){
-  require('child_process').exec('cp -rp ' + source + ' ' + target + '/', callback);
+  require('child_process').exec('cp -rp \'' + source + '\' ' + target + '/', callback);
 };
